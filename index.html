@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POO | JAVASCRIPT</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sistema Bancário - POO JS</h1>
+      <p>
+        Digite os valores abaixo para interagir com as classes em tempo real
+      </p>
+    </header>
+
+    <main class="container">
+      <!-- Card da Conta Corrente -->
+      <section class="card" id="card-corrente">
+        <h2>💳 Conta Corrente</h2>
+        <p class="titular">Titular: <span id="cc-titular">-</span></p>
+        <div class="info-saldo">
+          <p>Saldo Real: <strong id="cc-saldo">R$ 0,00</strong></p>
+          <p>Limite Disponível: <span id="cc-limite">R$ 0,00</span></p>
+        </div>
+
+        <!-- 🆕 Seção de Ações da Conta Corrente -->
+        <div class="acoes">
+          <input
+            type="number"
+            id="cc-input"
+            placeholder="Valor (R$)"
+            min="0"
+            step="0.01"
+          />
+          <div class="botoes-grupo">
+            <button id="cc-btn-depositar" class="btn btn-deposito">
+              Depositar
+            </button>
+            <button id="cc-btn-sacar" class="btn btn-saque">Sacar</button>
+          </div>
+        </div>
+
+        <div class="historico">
+          <h3>Histórico de Operações</h3>
+          <div id="cc-historico"></div>
+        </div>
+      </section>
+
+      <!-- Card da Conta Poupança -->
+      <section class="card" id="card-poupanca">
+        <h2>💰 Conta Poupança</h2>
+        <p class="titular">Titular: <span id="cp-titular">-</span></p>
+        <div class="info-saldo">
+          <p>Saldo Total: <strong id="cp-saldo">R$ 0,00</strong></p>
+          <p>Taxa de Rendimento: <span id="cp-taxa">0,0%</span></p>
+        </div>
+
+        <!-- 🆕 Seção de Ações da Conta Poupança -->
+        <div class="acoes">
+          <input
+            type="number"
+            id="cp-input"
+            placeholder="Valor (R$)"
+            min="0"
+            step="0.01"
+          />
+          <div class="botoes-grupo">
+            <button id="cp-btn-depositar" class="btn btn-deposito">
+              Depositar
+            </button>
+            <button id="cp-btn-sacar" class="btn btn-saque">Sacar</button>
+          </div>
+          <button id="cp-btn-render" class="btn btn-render">
+            Aplicar Rendimento Mensal
+          </button>
+        </div>
+
+        <div class="historico">
+          <h3>Histórico de Operações</h3>
+          <div id="cp-historico"></div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

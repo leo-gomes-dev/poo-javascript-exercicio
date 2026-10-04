@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #64748b;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  flex: 1;
+  min-width: 300px;
+  border-top: 5px solid #1e3a8a;
+}
+
+#card-poupanca {
+  border-top-color: #10b981;
+}
+
+.card h2 {
+  margin-bottom: 16px;
+  color: #1e293b;
+}
+
+.titular {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #475569;
+}
+
+.titular span {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.info-saldo {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.info-saldo p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-saldo strong {
+  font-size: 1.3rem;
+  color: #1e3a8a;
+}
+
+#card-poupanca .info-saldo strong {
+  color: #10b981;
+}
+
+.historico {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 16px;
+}
+
+.historico h3 {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.log-item {
+  font-size: 0.85rem;
+  padding: 6px 8px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  background: #f1f5f9;
+}
+
+.acoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.acoes input {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.acoes input:focus {
+  border-color: #1e3a8a;
+}
+
+.botoes-grupo {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-deposito {
+  background-color: #10b981;
+  color: white;
+}
+.btn-deposito:hover {
+  background-color: #059669;
+}
+
+.btn-saque {
+  background-color: #ef4444;
+  color: white;
+}
+.btn-saque:hover {
+  background-color: #dc2626;
+}
+
+.btn-render {
+  background-color: #3b82f6;
+  color: white;
+  margin-top: 5px;
+}
+.btn-render:hover {
+  background-color: #2563eb;
+}
